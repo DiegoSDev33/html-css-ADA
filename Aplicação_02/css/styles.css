@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2? family= Heebo:wght@100;200;300;400;500;600;700;800;900 & display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  height: 5rem;
+}
+
+header #navbar {
+  display: flex;
+  padding: 0 2rem; /* 1rem - equivale a 16px */
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+header #navbar .nav-brand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: #777;
+  transition: color 0.3s;
+}
+header #navbar .hamburguer-menu{
+  display: none;
+}
+@media (max-width:740px){
+  header #navbar .hamburguer-menu{
+    display: block;
+  }
+  header #navbar .nav-list{
+    display: none;
+  }
+}
+
+/* SECTION BANNER */
+
+main {
+  margin-top: 6rem;
+}
+
+main #banner{
+  display: flex;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+main #banner .banner-content .banner-content-title{
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+main #banner .banner-content .banner-content-subtitle{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  max-width: 31.5rem;
+  margin-bottom: 3rem;
+}
+
+main #banner .banner-content .banner-content-btn{
+  background-color: #00a8cc;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
+}
+
+main #banner .banner-image{
+  border-radius: 50%;
+  width: 100%;
+  max-width: 350px;
+}
+
+@media (max-width: 920px){
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main #banner .banner-content{
+    text-align: center;
+  }
+}
+
+/*  SECTION POSTS */
+
+section#posts {
+  margin-top: 4.2rem;
+  background-color: #edf7fa;
+}
+
+#posts .posts-content{
+  padding: 0 2rem; /* 1rem - equivale a 16px */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#posts .posts-content .posts-content-header .section-title{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#posts .posts-content .posts-content-header .view-all-link{
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+#posts .posts-content  .posts-cards{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content  .posts-cards .post-card{
+  background-color: #fff;
+  padding: 1.3rem;
+}
+
+#posts .posts-content  .posts-cards .post-card h3{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content  .posts-cards .post-card span{
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+  display: block; /*  colocando o display bloqk ele libera a margem, pois ela naturalmente é feita para ocupar a linha */
+
+}
+
+@media (max-width:740px){
+  #posts .posts-content  .posts-cards {
+    flex-direction: column;
+  }
+}
